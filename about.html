@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Nestoria Pest Match</title>
+    <meta name="description"
+        content="Learn how Nestoria Pest Match helps homeowners compare local pest control providers through a cleaner aggregator platform model." />
+
+    <link rel="icon" type="image/svg+xml" href="assets/images/global/favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/about.css" />
+</head>
+
+<body class="page-about">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <div class="site-progress" aria-hidden="true"></div>
+
+    <header class="site-header" id="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="site-logo" aria-label="Nestoria Pest Match home">
+                <span class="site-logo__mark" aria-hidden="true">
+                    <svg viewBox="0 0 64 64" fill="none">
+                        <path d="M32 8L50 16V30C50 42 42.5 51.5 32 56C21.5 51.5 14 42 14 30V16L32 8Z" />
+                        <path d="M24 33C24 28.5 27.6 25 32 25C36.4 25 40 28.5 40 33V40H24V33Z" />
+                        <path d="M28 25V22.8C28 20.1 29.8 17.7 32.4 16.9C34.7 16.2 37.2 16.8 39 18.6" />
+                    </svg>
+                </span>
+                <span class="site-logo__text">
+                    <strong>Nestoria</strong>
+                    <span>Pest Match</span>
+                </span>
+            </a>
+
+            <nav class="site-nav" aria-label="Primary navigation">
+                <ul class="site-nav__list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html" class="is-active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a class="header-phone" href="tel:+12125550198" aria-label="Call now at 1 212 555 0198">
+                    <i data-lucide="phone-call"></i>
+                    <span>(212) 555-0198</span>
+                </a>
+                <a class="btn btn--primary" href="contact.html">Get Quotes</a>
+            </div>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu"
+                aria-label="Open mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-callbar">
+        <a href="tel:+12125550198" aria-label="Call now">(212) 555-0198</a>
+    </div>
+
+    <aside class="mobile-menu" id="mobile-menu" aria-hidden="true">
+        <div class="mobile-menu__inner">
+            <div class="mobile-menu__top">
+                <a href="index.html" class="site-logo" aria-label="Nestoria Pest Match home">
+                    <span class="site-logo__mark" aria-hidden="true">
+                        <svg viewBox="0 0 64 64" fill="none">
+                            <path d="M32 8L50 16V30C50 42 42.5 51.5 32 56C21.5 51.5 14 42 14 30V16L32 8Z" />
+                            <path d="M24 33C24 28.5 27.6 25 32 25C36.4 25 40 28.5 40 33V40H24V33Z" />
+                            <path d="M28 25V22.8C28 20.1 29.8 17.7 32.4 16.9C34.7 16.2 37.2 16.8 39 18.6" />
+                        </svg>
+                    </span>
+                    <span class="site-logo__text">
+                        <strong>Nestoria</strong>
+                        <span>Pest Match</span>
+                    </span>
+                </a>
+
+                <button class="mobile-menu__close" type="button" aria-label="Close menu">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+
+            <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+
+                <div class="mobile-menu__dropdown">
+                    <button class="mobile-menu__dropdown-toggle" type="button" aria-expanded="false"
+                        aria-controls="mobile-services-list">
+                        <span>Explore Services</span>
+                        <i data-lucide="chevron-down"></i>
+                    </button>
+
+                    <div class="mobile-menu__dropdown-panel" id="mobile-services-list">
+                        <a href="termite-control.html"><i data-lucide="shield-alert"></i> Termite Control</a>
+                        <a href="rodent-control.html"><i data-lucide="paw-print"></i> Rodent Control</a>
+                        <a href="bed-bug-treatment.html"><i data-lucide="bed-double"></i> Bed Bug Treatment</a>
+                        <a href="ant-control.html"><i data-lucide="bug"></i> Ant Control</a>
+                        <a href="cockroach-control.html"><i data-lucide="radiation"></i> Cockroach Control</a>
+                        <a href="mosquito-control.html"><i data-lucide="trees"></i> Mosquito Control</a>
+                    </div>
+                </div>
+
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="mobile-menu__contact">
+                <a href="tel:+12125550198"><i data-lucide="phone-call"></i> (212) 555-0198</a>
+                <a href="mailto:hello@nestoriapestmatch.com"><i data-lucide="mail"></i> hello@nestoriapestmatch.com</a>
+                <a href="contact.html" class="btn btn--primary btn--full">Request Quotes</a>
+            </div>
+
+            <div class="mobile-menu__legal">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="cookie-policy.html">Cookie Policy</a>
+                <a href="terms-of-service.html">Terms of Service</a>
+            </div>
+        </div>
+    </aside>
+
+    <main id="main-content">
+        <section class="about-hero section">
+            <div class="container about-hero__layout">
+                <div class="about-hero__copy" data-aos="fade-up">
+                    <span class="eyebrow">About the platform</span>
+                    <h1>A cleaner way for homeowners to compare pest control options.</h1>
+                    <p>
+                        Nestoria Pest Match was built around a simple observation: many homeowners know they need help,
+                        but they do
+                        not always know which type of provider or service path fits the issue they are seeing.
+                    </p>
+                </div>
+
+                <div class="about-hero__media" data-aos="fade-left">
+                    <img src="assets/images/about/about-hero.jpg"
+                        alt="Refined residential interior with natural light" />
+                </div>
+            </div>
+        </section>
+
+        <section class="section story-section">
+            <div class="container story-grid">
+                <div class="story-card story-card--large" data-aos="fade-up">
+                    <span class="eyebrow">Why it exists</span>
+                    <h2>Designed for more clarity before the first call</h2>
+                    <p>
+                        Property-related pest issues can feel urgent, but the search process is often messy. Homeowners
+                        may be
+                        comparing indoor concerns, structural issues, seasonal outdoor activity, or recurring problems
+                        in apartments
+                        and single-family homes.
+                    </p>
+                    <p>
+                        Nestoria Pest Match was created to make that first step more organized: identify the service
+                        category, review
+                        local provider options, and request quotes with a clearer understanding of fit.
+                    </p>
+                </div>
+
+                <div class="story-stack" data-aos="fade-up" data-aos-delay="80">
+                    <article class="mini-story-card">
+                        <i data-lucide="search-check"></i>
+                        <h3>Category-first browsing</h3>
+                        <p>Users can start by exploring the pest issue itself instead of jumping straight into random
+                            listings.</p>
+                    </article>
+
+                    <article class="mini-story-card">
+                        <i data-lucide="badge-help"></i>
+                        <h3>Less guesswork</h3>
+                        <p>Structured service pages help homeowners understand what type of provider fit may matter.</p>
+                    </article>
+
+                    <article class="mini-story-card">
+                        <i data-lucide="messages-square"></i>
+                        <h3>Quote request flow</h3>
+                        <p>The platform supports quote intent rather than pushing a one-size-fits-all direct service
+                            pitch.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section model-section">
+            <div class="container model-layout">
+                <div class="model-copy" data-aos="fade-right">
+                    <span class="eyebrow">How the model works</span>
+                    <h2>This is an aggregator platform, not a direct pest control company</h2>
+                    <p>
+                        Nestoria Pest Match does not perform pest control work directly. The platform is designed to
+                        help homeowners
+                        compare categories, request quotes, and connect with independent providers based on the issue
+                        type, property
+                        context, and area served.
+                    </p>
+                </div>
+
+                <div class="model-steps" data-aos="fade-left">
+                    <article>
+                        <span>01</span>
+                        <h3>Browse by issue type</h3>
+                        <p>Termite, rodent, bed bug, ant, cockroach, and mosquito concerns each have their own page and
+                            context.</p>
+                    </article>
+                    <article>
+                        <span>02</span>
+                        <h3>Compare service fit</h3>
+                        <p>Users review which type of provider and service factors may be relevant before requesting
+                            quotes.</p>
+                    </article>
+                    <article>
+                        <span>03</span>
+                        <h3>Connect with independent providers</h3>
+                        <p>Requests are positioned around matching and comparison rather than direct in-house service
+                            claims.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section not-section">
+            <div class="container">
+                <div class="section-heading" data-aos="fade-up">
+                    <span class="eyebrow">What this platform is not</span>
+                    <h2>Clear positioning helps keep the experience honest and easier to understand</h2>
+                </div>
+
+                <div class="not-grid">
+                    <article class="not-card" data-aos="fade-up">
+                        <i data-lucide="x-circle"></i>
+                        <h3>Not a direct extermination company</h3>
+                        <p>This site does not present itself as an in-house pest control team or direct service
+                            operator.</p>
+                    </article>
+
+                    <article class="not-card" data-aos="fade-up" data-aos-delay="50">
+                        <i data-lucide="x-circle"></i>
+                        <h3>Not a contractor brand site</h3>
+                        <p>The platform is built around comparison and matching rather than representing one provider
+                            business.</p>
+                    </article>
+
+                    <article class="not-card" data-aos="fade-up" data-aos-delay="100">
+                        <i data-lucide="x-circle"></i>
+                        <h3>Not an educational portal</h3>
+                        <p>The goal is not to overload users with articles, but to help them move toward a practical
+                            next step.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section compare-benefits">
+            <div class="container compare-benefits__layout">
+                <div class="compare-benefits__image" data-aos="zoom-in">
+                    <img src="assets/images/about/about-compare.jpg"
+                        alt="Modern desk with planning materials and warm tones" />
+                </div>
+
+                <div class="compare-benefits__content" data-aos="fade-up">
+                    <span class="eyebrow">What users can compare</span>
+                    <h2>A better starting point for choosing who to contact</h2>
+                    <ul class="benefit-points">
+                        <li><i data-lucide="check"></i> Service category relevance</li>
+                        <li><i data-lucide="check"></i> Indoor, outdoor, structural, or seasonal fit</li>
+                        <li><i data-lucide="check"></i> Property type context</li>
+                        <li><i data-lucide="check"></i> Local availability and quote response path</li>
+                    </ul>
+                    <div class="about-actions">
+                        <a href="services.html" class="btn btn--primary">Browse Services</a>
+                        <a href="contact.html" class="btn btn--secondary">Request Quotes</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="site-logo" aria-label="Nestoria Pest Match home">
+                    <span class="site-logo__mark" aria-hidden="true">
+                        <svg viewBox="0 0 64 64" fill="none">
+                            <path d="M32 8L50 16V30C50 42 42.5 51.5 32 56C21.5 51.5 14 42 14 30V16L32 8Z" />
+                            <path d="M24 33C24 28.5 27.6 25 32 25C36.4 25 40 28.5 40 33V40H24V33Z" />
+                            <path d="M28 25V22.8C28 20.1 29.8 17.7 32.4 16.9C34.7 16.2 37.2 16.8 39 18.6" />
+                        </svg>
+                    </span>
+                    <span class="site-logo__text">
+                        <strong>Nestoria</strong>
+                        <span>Pest Match</span>
+                    </span>
+                </a>
+                <p>
+                    Built to help homeowners compare local pest control provider options with a more transparent
+                    platform-first
+                    experience.
+                </p>
+            </div>
+
+            <div>
+                <h3>Navigation</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Service Categories</h3>
+                <ul class="footer-links">
+                    <li><a href="termite-control.html">Termite Control</a></li>
+                    <li><a href="rodent-control.html">Rodent Control</a></li>
+                    <li><a href="bed-bug-treatment.html">Bed Bug Treatment</a></li>
+                    <li><a href="ant-control.html">Ant Control</a></li>
+                    <li><a href="cockroach-control.html">Cockroach Control</a></li>
+                    <li><a href="mosquito-control.html">Mosquito Control</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Legal</h3>
+                <ul class="footer-links">
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                    <li><a href="terms-of-service.html">Terms of Service</a></li>
+                </ul>
+                <p class="footer-area">USA service area focus</p>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p class="footer-disclaimer">
+                Disclaimer: This site is a free service to assist homeowners in connecting with local service providers.
+                All
+                contractors/providers are independent and this site does not warrant or guarantee any work performed. It
+                is the
+                responsibility of the homeowner to verify that the hired contractor furnishes the necessary license and
+                insurance
+                required for the work being performed. All persons depicted in a photo or video are actors or models and
+                not
+                contractors listed on this site.
+            </p>
+            <p class="footer-copy">© 2026 Nestoria Pest Match. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="cookie-bar" id="cookie-bar" role="dialog" aria-live="polite" aria-label="Cookie and policy notice">
+        <div class="cookie-bar__inner">
+            <div class="cookie-bar__copy">
+                <strong>Policy Notice</strong>
+                <p>By continuing to use this site, you can review our policy pages and choose whether to accept or
+                    decline.</p>
+                <div class="cookie-bar__links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="cookie-policy.html">Cookie Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                </div>
+            </div>
+            <div class="cookie-bar__actions">
+                <button class="btn btn--primary" type="button" data-cookie-action="accept">Accept</button>
+                <button class="btn btn--secondary" type="button" data-cookie-action="decline">Decline</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/about.js"></script>
+</body>
+
+</html>
