@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const tiltCards = document.querySelectorAll(".tilt-card");
     const floatingCards = document.querySelectorAll(".floating-card");
+    const testimonialsSwiper = document.querySelector(".testimonials-swiper");
 
     tiltCards.forEach((card) => {
         card.addEventListener("mousemove", (event) => {
@@ -21,6 +22,37 @@ document.addEventListener("DOMContentLoaded", () => {
             card.style.transform = "";
         });
     });
+
+    if (testimonialsSwiper && window.Swiper) {
+        const testimonialsPagination = testimonialsSwiper.querySelector(".testimonials-swiper__pagination");
+
+        new Swiper(testimonialsSwiper, {
+            loop: true,
+            loopAdditionalSlides: 3,
+            loopedSlides: 3,
+            slidesPerGroup: 1,
+            grabCursor: true,
+            speed: 650,
+            spaceBetween: 20,
+            slidesPerView: 1,
+            roundLengths: true,
+            watchOverflow: false,
+            observer: true,
+            observeParents: true,
+            pagination: {
+                el: testimonialsPagination,
+                clickable: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1120: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+    }
 
     if (window.gsap && window.ScrollTrigger) {
         gsap.registerPlugin(ScrollTrigger);

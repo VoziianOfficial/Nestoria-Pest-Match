@@ -109,11 +109,25 @@
     overflow: visible;
 }
 
+.popular-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.popular-service-card {
+    border-radius: 28px;
+    border: 1px solid var(--color-border);
+    background: var(--color-surface);
+    box-shadow: var(--color-shadow-soft);
+    overflow: hidden;
+}
+
 .service-rail-card {
     position: relative;
     display: block;
-    min-height: 460px;
-    border-radius: 28px;
+    min-height: 340px;
+    border-radius: 28px 28px 0 0;
     overflow: hidden;
     box-shadow: var(--color-shadow);
 }
@@ -158,6 +172,26 @@
 .service-rail-card__content strong {
     font-size: 1.35rem;
     line-height: 1.2;
+}
+
+.popular-counter {
+    padding: 18px 22px 20px;
+    display: grid;
+    gap: 4px;
+    background: linear-gradient(180deg, #fff, #faf6f0);
+}
+
+.popular-counter__label {
+    color: var(--color-text-muted);
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.popular-counter__value {
+    font-size: clamp(1.5rem, 2.8vw, 2rem);
+    color: var(--color-primary);
 }
 
 .compare-layout {
@@ -220,6 +254,10 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
+    .popular-services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .compare-layout {
         grid-template-columns: 1fr;
     }
@@ -231,12 +269,13 @@
     }
 
     .service-cards-grid,
+    .popular-services-grid,
     .compare-points {
         grid-template-columns: 1fr;
     }
 
     .service-rail-card {
-        min-height: 400px;
+        min-height: 360px;
     }
 
     .cta-band__inner {
