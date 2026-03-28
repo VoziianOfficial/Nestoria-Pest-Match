@@ -621,11 +621,11 @@ p {
 ================================ */
 .field {
     display: grid;
-    gap: 8px;
+    gap: 6px;
 }
 
 .field__label {
-    font-size: 0.92rem;
+    font-size: 0.88rem;
     font-weight: 700;
     color: var(--color-heading);
 }
@@ -633,14 +633,14 @@ p {
 .field input,
 .field select,
 .field textarea {
-    min-height: 54px;
-    padding: 14px 16px;
-    border-radius: 16px;
+    min-height: 48px;
+    padding: 12px 14px;
+    border-radius: 14px;
     transition: border-color var(--transition), box-shadow var(--transition), background var(--transition);
 }
 
 .field textarea {
-    min-height: 130px;
+    min-height: 110px;
 }
 
 .field input:focus,

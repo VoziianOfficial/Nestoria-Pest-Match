@@ -81,8 +81,8 @@
 }
 
 .contact-form-panel {
-    padding: 28px;
-    border-radius: 30px;
+    padding: 24px;
+    border-radius: 24px;
     background: var(--color-surface);
     border: 1px solid var(--color-border);
     box-shadow: var(--color-shadow);
@@ -90,6 +90,7 @@
 
 .contact-form .form-actions {
     justify-content: flex-start;
+    margin-top: 16px;
 }
 
 .contact-side-panel {
@@ -184,6 +185,11 @@
 }
 
 @media (max-width: 767px) {
+    .contact-form-panel {
+        padding: 20px;
+        border-radius: 20px;
+    }
+
     .contact-map-card__visual {
         min-height: 340px;
     }
