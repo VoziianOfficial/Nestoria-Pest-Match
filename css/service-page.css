@@ -264,6 +264,11 @@
     gap: 12px;
 }
 
+.service-compare-band__actions .btn {
+    flex: 1 1 0;
+    min-width: 160px;
+}
+
 .service-compare-band__inner .btn--secondary {
     background: rgba(255, 255, 255, 0.1);
     color: var(--color-white);

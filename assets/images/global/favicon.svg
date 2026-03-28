@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="16" fill="url(#bg)" />
+  <g stroke="#FFF8F2" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="32" cy="17" rx="7" ry="6.5" />
+    <ellipse cx="32" cy="30" rx="9.5" ry="8.5" />
+    <ellipse cx="32" cy="46" rx="12" ry="10" />
+    <path d="M28 12L22 7" />
+    <path d="M36 12L42 7" />
+    <path d="M24 26L14 20" />
+    <path d="M24 31L12 31" />
+    <path d="M24 36L14 42" />
+    <path d="M40 26L50 20" />
+    <path d="M40 31L52 31" />
+    <path d="M40 36L50 42" />
+    <path d="M32 23V24" />
+    <path d="M32 39V40" />
+  </g>
+  <defs>
+    <linearGradient id="bg" x1="32" y1="0" x2="32" y2="64" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5A372B" />
+      <stop offset="1" stop-color="#3A221B" />
+    </linearGradient>
+  </defs>
+</svg>
