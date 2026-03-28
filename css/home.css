@@ -37,6 +37,7 @@
 
 .hero__copy {
     color: var(--color-white);
+    padding-left: 14px;
 }
 
 .hero__copy h1,
@@ -504,6 +505,10 @@
 
     .hero__content {
         padding: 118px 0 56px;
+    }
+
+    .hero__copy {
+        padding-left: 0;
     }
 
     .hero__floating-cards {

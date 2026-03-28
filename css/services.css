@@ -243,6 +243,11 @@
     gap: 12px;
 }
 
+.cta-band__actions .btn {
+    flex: 1 1 0;
+    min-width: 160px;
+}
+
 .cta-band__inner .btn--secondary {
     background: rgba(255, 255, 255, 0.12);
     color: var(--color-white);

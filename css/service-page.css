@@ -64,6 +64,7 @@
 
 .service-hero__copy {
     max-width: 760px;
+    padding-left: 14px;
 }
 
 .service-hero__copy h1,
@@ -89,6 +90,7 @@
 .service-hero__stats {
     display: grid;
     gap: 16px;
+    padding-right: 14px;
 }
 
 .service-hero__stats article {
@@ -353,8 +355,13 @@
         grid-template-columns: 1fr;
     }
 
+    .service-hero__copy {
+        padding-left: 0;
+    }
+
     .service-hero__stats {
         grid-template-columns: repeat(3, minmax(0, 1fr));
+        padding-right: 0;
     }
 
     .service-factors__grid {
