@@ -42,9 +42,17 @@ document.addEventListener("DOMContentLoaded", () => {
     handleScrollUI();
     window.addEventListener("scroll", handleScrollUI);
 
+    if (mobileMenu) {
+        const isHidden = mobileMenu.getAttribute("aria-hidden") !== "false";
+        if (isHidden) {
+            mobileMenu.setAttribute("inert", "");
+        }
+    }
+
     const openMenu = () => {
         if (!mobileMenu || !navToggle) return;
         mobileMenu.classList.add("is-open");
+        mobileMenu.removeAttribute("inert");
         mobileMenu.setAttribute("aria-hidden", "false");
         navToggle.setAttribute("aria-expanded", "true");
         body.classList.add("menu-open");
@@ -52,8 +60,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const closeMenu = () => {
         if (!mobileMenu || !navToggle) return;
+        if (document.activeElement && mobileMenu.contains(document.activeElement)) {
+            navToggle.focus();
+        }
         mobileMenu.classList.remove("is-open");
         mobileMenu.setAttribute("aria-hidden", "true");
+        mobileMenu.setAttribute("inert", "");
         navToggle.setAttribute("aria-expanded", "false");
         body.classList.remove("menu-open");
     };
