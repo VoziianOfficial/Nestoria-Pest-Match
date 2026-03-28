@@ -268,18 +268,46 @@
         min-height: 60vh;
     }
 
+    .services-hero__content {
+        padding-bottom: 56px;
+    }
+
     .service-cards-grid,
     .popular-services-grid,
     .compare-points {
         grid-template-columns: 1fr;
     }
 
+    .service-showcase-card__body {
+        padding: 18px;
+    }
+
     .service-rail-card {
         min-height: 360px;
     }
 
+    .service-rail-card__content {
+        padding: 18px;
+    }
+
+    .popular-counter {
+        padding: 14px 16px 16px;
+    }
+
+    .compare-points article {
+        padding: 18px;
+    }
+
     .cta-band__inner {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: stretch;
+    }
+
+    .cta-band__actions {
+        width: 100%;
+    }
+
+    .cta-band__actions .btn {
+        width: 100%;
     }
 }

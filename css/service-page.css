@@ -373,11 +373,27 @@
     }
 
     .service-hero__content {
-        padding: 140px 0 72px;
+        padding: 124px 0 62px;
+        gap: 20px;
+    }
+
+    .service-hero__actions {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .service-hero__actions .btn {
+        width: 100%;
     }
 
     .service-hero__stats {
         grid-template-columns: 1fr;
+    }
+
+    .service-hero__stats article {
+        padding: 14px 14px 16px;
+        border-radius: 18px;
     }
 
     .service-factors__grid {
@@ -386,6 +402,11 @@
 
     .service-factors__grid article {
         min-height: auto;
+        padding: 18px;
+    }
+
+    .service-note-card {
+        padding: 18px;
     }
 
     .service-compare-band__inner {

@@ -191,6 +191,15 @@
     }
 
     .contact-map-card__visual {
-        min-height: 340px;
+        min-height: 300px;
+    }
+
+    .map-chip {
+        padding: 8px 10px;
+        font-size: 0.75rem;
+    }
+
+    .map-chip--three {
+        display: none;
     }
 }

@@ -503,31 +503,16 @@
     }
 
     .hero__content {
-        padding: 140px 0 70px;
+        padding: 118px 0 56px;
     }
 
     .hero__floating-cards {
-        min-height: 260px;
+        display: none;
     }
 
-    .floating-card {
-        width: 210px;
-        padding: 16px;
-    }
-
-    .floating-card--one {
-        top: 0;
-        right: 40px;
-    }
-
-    .floating-card--two {
-        top: 90px;
-        right: 0;
-    }
-
-    .floating-card--three {
-        bottom: 0;
-        right: 60px;
+    .hero__meta li {
+        width: 100%;
+        justify-content: center;
     }
 
     .process-grid,
@@ -544,10 +529,23 @@
         min-height: 0;
     }
 
+    .coverage-tag {
+        padding: 8px 10px;
+        font-size: 0.78rem;
+    }
+
+    .coverage-tag--three {
+        display: none;
+    }
+
     .testimonials-swiper {
         width: 100%;
         margin-top: 18px;
         padding-bottom: 34px;
+    }
+
+    .testimonial-card__body p {
+        min-height: auto;
     }
 
     .form-actions {
