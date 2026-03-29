@@ -511,6 +511,13 @@
         padding-left: 0;
     }
 
+    .hero__copy .eyebrow,
+    .hero__copy h1,
+    .hero__lead,
+    .hero__actions {
+        padding-left: 10px;
+    }
+
     .hero__floating-cards {
         display: none;
     }
