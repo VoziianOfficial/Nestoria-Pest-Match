@@ -272,60 +272,166 @@
     color: var(--color-heading);
 }
 
-.coverage-layout {
+.pricing-factors-section {
+    background: linear-gradient(180deg, rgba(75, 46, 36, 0.04) 0%, transparent 100%);
+}
+
+.pricing-factors-grid {
     display: grid;
-    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.pricing-factor-card {
+    position: relative;
+    padding: 22px;
+    min-height: 198px;
+    border-radius: 22px;
+    border: 1px solid var(--color-border);
+    background: var(--color-surface);
+    box-shadow: var(--color-shadow-soft);
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
+    overflow: hidden;
+}
+
+.pricing-factor-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 15% 12%, rgba(122, 74, 53, 0.16), transparent 44%);
+    opacity: 0.7;
+    pointer-events: none;
+    transition: opacity var(--transition-fast);
+}
+
+.pricing-factor-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(75, 46, 36, 0.24);
+    box-shadow: var(--color-shadow);
+}
+
+.pricing-factor-card:hover::before {
+    opacity: 1;
+}
+
+.pricing-factor-card h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.06rem;
+    color: var(--color-heading);
+}
+
+.pricing-factor-card p {
+    margin-top: 10px;
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+}
+
+.pricing-factors-cta {
+    margin-top: 24px;
+}
+
+.platform-reach-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
     gap: 30px;
     align-items: center;
 }
 
-.coverage-map__inner {
+.platform-reach-copy p {
+    margin-top: 14px;
+}
+
+.platform-reach-copy .text-link {
+    display: inline-flex;
+    margin-top: 22px;
+}
+
+.platform-reach-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.reach-card {
     position: relative;
-    height: auto;
-    border-radius: 28px;
-    overflow: hidden;
+    padding: 20px;
+    min-height: 198px;
+    border-radius: 22px;
     border: 1px solid var(--color-border);
-    box-shadow: var(--color-shadow);
+    background: linear-gradient(180deg, #fff, #faf6f1);
+    box-shadow: var(--color-shadow-soft);
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
+    overflow: hidden;
 }
 
-.coverage-map__inner img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.coverage-map__inner::after {
+.reach-card::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(20, 12, 10, 0.12), rgba(20, 12, 10, 0.35));
+    background: radial-gradient(circle at 85% 18%, rgba(75, 46, 36, 0.12), transparent 46%);
+    opacity: 0.65;
+    pointer-events: none;
+    transition: opacity var(--transition-fast);
 }
 
-.coverage-tag {
-    position: absolute;
-    z-index: 1;
-    padding: 10px 14px;
-    border-radius: var(--radius-pill);
-    background: rgba(255, 255, 255, 0.9);
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    box-shadow: var(--color-shadow-soft);
-    font-weight: 700;
+.reach-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(75, 46, 36, 0.24);
+    box-shadow: var(--color-shadow);
+}
+
+.reach-card:hover::before {
+    opacity: 1;
+}
+
+.reach-card h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.04rem;
     color: var(--color-heading);
 }
 
-.coverage-tag--one {
-    top: 26px;
-    left: 26px;
+.reach-card p {
+    margin-top: 9px;
+    color: var(--color-text-muted);
+    font-size: 0.94rem;
 }
 
-.coverage-tag--two {
-    bottom: 28px;
-    left: 28px;
+.reach-card--map h3 {
+    margin-bottom: 12px;
 }
 
-.coverage-tag--three {
-    top: 50%;
-    right: 22px;
+.reach-card__map-wrap {
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(75, 46, 36, 0.14);
+    box-shadow: var(--color-shadow-soft);
+}
+
+.reach-card__map-wrap img {
+    width: 100%;
+    height: 102px;
+}
+
+.reach-card__map-wrap iframe {
+    width: 100%;
+    height: 102px;
+    border: 0;
+    display: block;
+}
+
+.reach-card__map-address {
+    margin-top: 10px;
+    font-size: 0.88rem;
+    color: var(--color-text-muted);
+    line-height: 1.45;
 }
 
 .testimonials-section {
@@ -491,9 +597,17 @@
 
     .hero__content,
     .platform-layout,
-    .coverage-layout,
+    .platform-reach-layout,
     .form-layout {
         grid-template-columns: 1fr;
+    }
+
+    .pricing-factors-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .platform-reach-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .hero__floating-cards {
@@ -536,25 +650,14 @@
 
     .process-grid,
     .categories-grid,
+    .pricing-factors-grid,
+    .platform-reach-grid,
     .form-grid {
         grid-template-columns: 1fr;
     }
 
     .category-card {
         min-height: 340px;
-    }
-
-    .coverage-map__inner {
-        min-height: 0;
-    }
-
-    .coverage-tag {
-        padding: 8px 10px;
-        font-size: 0.78rem;
-    }
-
-    .coverage-tag--three {
-        display: none;
     }
 
     .testimonials-swiper {
