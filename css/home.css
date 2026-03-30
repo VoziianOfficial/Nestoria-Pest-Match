@@ -35,6 +35,13 @@
     padding: 120px 0 90px;
 }
 
+@media (min-width: 768px) {
+    .hero__content {
+        width: min(100% - 32px, var(--container));
+        margin-inline: auto;
+    }
+}
+
 .hero__copy {
     color: var(--color-white);
     padding-left: 14px;
